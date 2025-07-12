@@ -1,0 +1,41 @@
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .nav-links a {
+    width: 100%;
+    color: var(--neutral-100);
+    text-decoration: none;
+    font-size: var(--text-xl);
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .nav-links {
+      margin: 2rem 0;
+    }
+  }
+  
+  /* Desktop styles */
+  @media (min-width: 768px) {
+    .nav-links {
+      flex-direction: row;
+      gap: 2rem;
+      align-items: center;
+    }
+  
+    .nav-links a {
+      color: var(--neutral-100); /* Or match your desktop nav color */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .nav-links a {
+        font-size: var(--text-2xl);
+    }
+  }
+  
