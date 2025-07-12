@@ -1,0 +1,58 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.greeting h1,
+.greeting h3,
+.greeting h4 {
+  margin: 0;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 0.25rem;
+}
+
+.greeting h1 {
+    color: var(--brand-500);
+}
+
+.greeting h3 {
+    color: var(--neutral-300);
+}
+
+.greeting h4 {
+    color: var(--neutral-100);
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.button {
+    background-color: var(--brand-700);
+    color: var(--neutral-100);
+    padding: 0.75rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 4px rgb(0, 0, 0,0.2);
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    margin-left: 0.75rem;
+    font-size: 1.5rem;
+    color: var(--brand-600);
+}
+.social-icon{
+    text-decoration: none;
+    color: var(--brand-600);
+}
