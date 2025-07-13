@@ -23,11 +23,11 @@
 
 @media (max-width: 768px) {
   .nav-links {
-    margin: 2rem 0;
+    margin: 2rem 0rem;
   }
 
   .dropdown-element{
-    margin-right: -3.75rem;
+    margin-right: -5rem;
     width: auto;
     background-color: var(--brand-800);
     border-radius: 12px;
@@ -58,7 +58,7 @@
 
   @keyframes circleDropAndRoll {
     0% {
-      margin-right: -3rem;
+      margin-right: -3.5rem;
       opacity: 0;
       transform: translateY(-50px) scale(0);
       border-radius: 50%;
@@ -67,7 +67,7 @@
       padding: 0;
     }
     20% {
-      margin-right: -3.75rem;
+      margin-right: -3.5rem;
       opacity: 1;
       transform: translateY(0) scale(1);
       border-radius: 50%;
@@ -76,7 +76,7 @@
       padding: 0;
     }
     40% {
-      margin-right: -3.75rem;
+      margin-right: -3.5rem;
       opacity: 1;
       border-radius: 50%;
       width: 2rem;
@@ -84,7 +84,7 @@
       padding: 0;
     }
     60% {
-      margin-right: -3.75rem;
+      margin-right: -3.5rem;
       opacity: 1;
       border-radius: 50%;
       width: 2rem;
@@ -92,7 +92,7 @@
       padding: 0;
     }
     80% {
-      margin-right: -3.75rem;
+      margin-right: -3.5rem;
       opacity: 1;
       border-radius: 12px 50% 50% 12px;
       width: auto;
@@ -113,23 +113,18 @@
   @keyframes textReveal {
     0% {
       opacity: 0;
-      transform: translateX(0px);
     }
     50% {
       opacity: 0;
-      transform: translateX(0px);
     }
     60% {
       opacity: 0.5;
-      transform: translateX(0px);
     }
     80% {
       opacity: 1;
-      transform: translateX(0);
     }
     100% {
       opacity: 1;
-      transform: translateX(0);
     }
   }
 }

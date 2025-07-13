@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import './Header.css';
 import {GiHamburgerMenu} from 'react-icons/gi';
-import {FiChevronUp} from 'react-icons/fi';
 import NavLinks from './NavLinks';
 
 
