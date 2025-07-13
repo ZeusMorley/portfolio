@@ -52,12 +52,12 @@
 
 @media (min-width: 1024px) {
   :root {
-    --h1: var(--s40);
-    --h2: var(--s36);
-    --h3: var(--s32);
-    --h4: var(--s28);
-    --h5: var(--s24);
-    --h6: var(--s20);
+  --h1: var(--s40);
+  --h2: var(--s36);
+  --h3: var(--s32);
+  --h4: var(--s28);
+  --h5: var(--s24);
+  --h6: var(--s20);
   }
 }
 

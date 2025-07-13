@@ -27,9 +27,9 @@ const Header = () => {
         {isDropdownOpen && (
           <div className="dropdown">
             <NavLinks /> 
-            <button className="dropdown__close" onClick={toggleDropdown}>
+            {/* <button className="dropdown__close" onClick={toggleDropdown}>
               <FiChevronUp size={28} />
-            </button>
+            </button> */}
           </div>
         )}
 
