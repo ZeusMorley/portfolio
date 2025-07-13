@@ -16,10 +16,10 @@ const Header = () => {
     <>
     <header className="header">
       <div className="container">
-        <h1 className="header__title">
+        <h2 className="header__title">
           <span className="header__title--first">Zeus</span>
           <span className="header__title--second">Morley</span>
-        </h1>
+        </h2>
         <nav className="nav-desktop">
           <NavLinks />
         </nav>

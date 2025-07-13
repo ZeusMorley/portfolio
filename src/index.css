@@ -22,47 +22,71 @@
   --neutral-800: #071717;
   --neutral-900: #031111;
 
-  /* Breakpoints */
-  --mobile: 375px;
-  --tablet: 768px;
-  --desktop: 1024px;
+  --s12: 0.75rem;
+  --s16: 1rem;
+  --s20: 1.25rem;
+  --s24: 1.5rem;
+  --s28: 1.75rem;
+  --s32: 2rem;
+  --s36: 2.25rem;
+  --s40: 2.5rem;
 
-  /* Spacing */
-  --space-xs: 0.25rem;   /* 4px */
-  --space-sm: 0.5rem;    /* 8px */
-  --space-md: 1rem;      /* 16px */
-  --space-lg: 1.5rem;    /* 24px */
-  --space-xl: 2rem;      /* 32px */
-  --space-2xl: 3rem;     /* 48px */
-  --space-3xl: 4rem;     /* 64px */
-
-  /* Typography Scale */
-  --text-xs: 0.75rem;    /* 12px */
-  --text-sm: 0.875rem;   /* 14px */
-  --text-base: 1rem;     /* 16px */
-  --text-lg: 1.125rem;   /* 18px */
-  --text-xl: 1.25rem;    /* 20px */
-  --text-2xl: 1.5rem;    /* 24px */
-  --text-3xl: 1.75rem;  /* 28px */
-  --text-4xl: 2rem;   /* 32px */
-  --text-5xl: 2.25rem;      /* 36px */
-  --text-6xl: 2.5rem;      /* 40px */
-
-  /* Container Max Widths */
-  --container-mobile: 100%;
-  --container-tablet: 720px;
-  --container-desktop: 960px;
-
-  /* Border Radius */
-  --radius-sm: 0.25rem;  /* 4px */
-  --radius-md: 0.5rem;   /* 8px */
-  --radius-lg: 1rem;     /* 16px */
-  --radius-xl: 1.5rem;   /* 24px */
+  --h1: var(--s32);
+  --h2: var(--s28);
+  --h3: var(--s24);
+  --h4: var(--s20);
+  --h5: var(--s16);
+  --h6: var(--s12);
 } 
 
+@media (min-width: 768px) {
+  :root {
+  --h1: var(--s36);
+  --h2: var(--s32);
+  --h3: var(--s28);
+  --h4: var(--s24);
+  --h5: var(--s20);
+  --h6: var(--s16);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --h1: var(--s40);
+    --h2: var(--s36);
+    --h3: var(--s32);
+    --h4: var(--s28);
+    --h5: var(--s24);
+    --h6: var(--s20);
+  }
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+h6 {
+  font-size: var(--h6);
+}
 
 body {
-  background: var(--neutral-700) url('../public/connected-20.png') repeat;
+  background: var(--neutral-700) url('../public/texture.png') repeat;
   background-size: 15%;
   margin: 0;
   font-family: 'Lexend Deca', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
