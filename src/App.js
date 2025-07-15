@@ -3,6 +3,7 @@ import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
 import Home from './components/Sections/Home';
 import About from './components/Sections/About';
+import Experience from './components/Sections/Experience';
 import Scroll from './components/Scroll';
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
             <Home />
             <Scroll to="about"/>
             <About />
+            <Scroll to="experience"/>
+            <Experience />
         </div>
       </main>
       <Footer />

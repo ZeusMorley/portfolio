@@ -73,7 +73,7 @@
     color: var(--brand-500);
 }
 
-.picture-container {
+.picture-container .me{
     width: 100%;
     border-radius: 1rem;
     overflow: hidden;
@@ -100,7 +100,8 @@
     .home-container {
         flex-direction: row;
     }
-    .left-side, .right-side {
+    .left-side .home-container,
+    .right-side .home-container {
         width: 50%;
     }
 }
