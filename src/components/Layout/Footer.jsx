@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import {FiChevronUp} from 'react-icons/fi';
+import ScrollToTop from '../ScrollToTop';
 
 const Footer = () => {
     return (
@@ -10,6 +10,8 @@ const Footer = () => {
                     <span className="footer__title--first">Zeus</span>
                     <span className="footer__title--second">Morley</span>
                 </p>
+                
+                <ScrollToTop/>
             </div>
         </footer>
     );

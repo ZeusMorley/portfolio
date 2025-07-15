@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Home = () => {
     return (
-        <div className="home-container">
+        <div className="home-container" id="home">
             <div className="left-side">
                 <div className="greeting">
                     <h4>Hello, I'm</h4>

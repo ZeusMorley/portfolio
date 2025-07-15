@@ -13,6 +13,7 @@
 .header__title {
   margin: 0;
   text-align: left;
+  font-size: var(--h3);
 }
 
 .header__title--first {
@@ -76,7 +77,7 @@
 /* Tablet and up */
 @media (min-width: 768px) {
   .header__title {
-    font-size: 1.75rem;
+    font-size: var(--h3);
     text-align: left;
   }
 
@@ -94,6 +95,6 @@
 /* Desktop and up */
 @media (min-width: 1024px) {
   .header__title {
-    font-size: 2rem;
+    font-size: var(--h3);
   }
 }

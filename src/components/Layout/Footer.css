@@ -1,17 +1,20 @@
 .footer {
-align-content: center;
+    margin: 0;
+    /* background-color: var(--brand-700); */
+    /* margin: 0rem -1.5rem 0rem -1.5rem; */
 }
 
-.footer .container {
+.footer__container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 0rem;
+    padding: 0rem 1rem;
 }
 
 .footer__text {
     margin: 0;
+    font-size: var(--h5);
     text-align: left;
 }
   
@@ -22,19 +25,18 @@ align-content: center;
 .footer__title--second {
     color: var(--brand-100);
 }
-  
-  
+
 /* Tablet and up */
 @media (min-width: 768px) {
-    .footer__title {
-      font-size: 1.75rem;
+    .footer__text {
+      font-size: var(--h5);
       text-align: left;
     }
 }
   
 /* Desktop and up */
 @media (min-width: 1024px) {
-    .footer__title {
-      font-size: 2rem;
+    .footer__text {
+      font-size: var(--h5);
     }
 }

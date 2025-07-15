@@ -1,0 +1,29 @@
+.scroll-to-top-btn{
+    display: flex;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    opacity: 0;
+    margin: var(--h1);
+    font-size: var(--h3);
+    padding: 0.1rem;
+    color: var(--brand-500);
+    background-color: var(--neutral-500);
+    border-radius: 50%;
+    animation: bounce 4s infinite;
+}
+
+.scroll-to-top-btn.isVisible{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-to-top-btn:hover{
+    color: var(--brand-800);
+    background-color:var(--brand-700);
+}
+
+@keyframes bounce {
+    0%, 30%, 50%,100% { transform: translateY(0); }
+    20%,40% { transform: translateY(-10px); }
+}
