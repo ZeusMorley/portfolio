@@ -28,18 +28,58 @@
 .experience-contents .left-side , 
 .experience-contents .right-side {
     width: 100%;
-    border: 1px solid var(--brand-600);
-    border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.experience-contents .right-side {
+    border: 1px solid var(--brand-600);
+    border-radius: 0.5rem;
+}
+
 .project-list-container {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 1rem;
+}
+
+.project-title-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 2rem;
+    font-size: var(--h4);
+    border: 1px solid var(--brand-600);
+    border-radius: 10rem;
+}
+
+.project-topics-active {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.nav-button {
+    color: var(--neutral-100);
+    background: transparent;
+    border: none;
+}
+
+.nav-button svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.nav-button:hover {
+    color: var(--brand-500);
+}
+
+.project-details-container {
+    width: 100%;
+    height: 100%;
 }

@@ -73,12 +73,15 @@
     color: var(--brand-500);
 }
 
+.right-side .picture-container {
+    display: flex;
+    justify-content: center;
+}
+
 .picture-container .me{
-    width: 100%;
+    width: 80%;
     border-radius: 1rem;
     overflow: hidden;
-    align-self: center;
-    justify-self: center;
     box-shadow: 0 0 10px 4px rgba(0, 228, 232, 0.2);
 }
 
@@ -103,5 +106,10 @@
     .left-side .home-container,
     .right-side .home-container {
         width: 50%;
+    }
+
+    .right-side .picture-container {
+        display: flex;
+        justify-content: flex-end;
     }
 }

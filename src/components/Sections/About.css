@@ -24,8 +24,7 @@
 }
 
 .picture-container .grad{
-    width: 100%;
-    height: 100%;
+    width: 60%;
     object-fit: cover;
     object-position: center;
     border-radius: 1rem;
@@ -50,6 +49,12 @@
     gap: 0.25rem;
     font-size: var(--h6);
     color: var(--neutral-100);
+    margin-left: 20%;
+}
+
+.left-side .picture-container {
+    display: flex;
+    justify-content: center;
 }
 
 .course {
@@ -110,6 +115,13 @@
 @media (min-width: 768px) {
     .about-contents {
         flex-direction: row;
+    }
+    .left-side .picture-container {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .school-details {
+        margin-left: 0;
     }
 }
 

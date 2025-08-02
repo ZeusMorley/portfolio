@@ -1,12 +1,13 @@
 import ProjectTemplate from './Template';
 
 export const JEEPILI_TITLE = "Jeepili";
+export const JEEPILI_TOPICS = ['Mobile', 'Android'];
 
 export default function Jeepili() {
   return (
     <ProjectTemplate
     title={JEEPILI_TITLE}
-    topic = {['Mobile', 'Android']}
+    topic = {JEEPILI_TOPICS}
     technologies = {['React']}
     description= "Description"
     highlights = {['Highlight 1', 'Highlight 2', 'Highlight 3']}

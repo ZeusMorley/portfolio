@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Experience.css';
 import { projects } from '../Projects';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Experience = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,13 +26,28 @@ const Experience = () => {
             <div className="experience-contents">
                 <div className="left-side">
                     <div className="project-list-container">
-                        <button onClick={goToPrevious} className="nav-button">Previous</button>
+                        <button onClick={goToPrevious} className="nav-button">
+                            <ChevronLeft />
+                        </button>
 
-                        <div className="project-title active">
-                        {projects[currentIndex].title}
+                        <div className="project-title-container">
+                            <div className="project-title-active">
+                                {projects[currentIndex].title}
+                            </div>
+
+                            <div className="project-topics-active">
+                                {projects[currentIndex].topics.map((topic, index) => (
+                                    <div key={index} className="project-topic">
+                                        {topic}
+                                    </div>
+                                ))}
+                            </div>
+                            
                         </div>
 
-                        <button onClick={goToNext} className="nav-button">Next</button>
+                        <button onClick={goToNext} className="nav-button">
+                            <ChevronRight />
+                        </button>
                     </div>
                 </div>
 
