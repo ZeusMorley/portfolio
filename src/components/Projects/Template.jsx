@@ -3,7 +3,7 @@ import './Project.css';
 
 export default function ProjectTemplate({
   title,
-  topic = [],
+  topics = [],
   technologies = [],
   description,
   highlights = [],
@@ -17,21 +17,39 @@ export default function ProjectTemplate({
     <div className="project">
       <h3 className="project__title">{title}</h3>
 
-      {topic.length > 0 && (
+      {topics.length > 0 && (
         <div className="project__topics">
-          {topic.join(' ')}
+          {topics.map((topic, index) => (
+            <div key={index} className="topic-item">
+                {topic}
+            </div>
+          ))}
         </div>
       )}
 
 			{technologies.length > 0 && (
 					<div className="project__technologies">
-					{technologies.join(' ')}
+					{technologies.map((tech, index) => (
+            <div key={index} className="tech-item">
+                {tech}
+            </div>
+          ))}
 					</div>
 			)}
 
 			{description && (
 			<p className="project__description">{description}</p>
 			)}
+
+      {highlights.length > 0 && (
+        <div className="project__highlights">
+          {highlights.map((point, index) => (
+            <div key={index} className="project__highlight-item">
+              {point}
+            </div>
+          ))}
+        </div>
+      )}
 
 			{contribution && (
 			<p className="project__contribution">{contribution}</p>
@@ -41,15 +59,7 @@ export default function ProjectTemplate({
 			<p className="project__insights">{insights}</p>
 			)}
 
-      {highlights.length > 0 && (
-        <ul className="project__highlights">
-          {highlights.map((point, index) => (
-            <li key={index} className="project__highlight-item">
-              {point}
-            </li>
-          ))}
-        </ul>
-      )}
+      
 
       <div className="project__buttons">
         {repoLink && (

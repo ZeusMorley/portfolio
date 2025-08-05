@@ -22,7 +22,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.25rem;
+    gap: 1rem;
 }
 
 .experience-contents .left-side , 
@@ -35,6 +35,12 @@
 }
 
 .experience-contents .right-side {
+    height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.experience-contents .right-side {
     border: 1px solid var(--brand-600);
     border-radius: 0.5rem;
 }
@@ -43,25 +49,52 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem;
 }
 
 .project-title-container {
     display: flex;
+    flex-shrink: 1;
+    min-width: 0;
     flex-direction: row;
     width: 100%;
     text-align: left;
     padding: 0.5rem 2rem;
-    font-size: var(--h4);
     border: 1px solid var(--brand-600);
     border-radius: 10rem;
+    justify-content: space-between;
+}
+
+.project-title-active {
+    padding: 0.5rem 1rem;
+    font-size: var(--h3);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 }
 
 .project-topics-active {
     display: flex;
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 1rem;
+    font-size: var(--h5);
+    white-space: nowrap;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
+    min-width: 0;
+}
+
+.project-topic {
+    padding: 0.5rem 1rem;
+    background-color: var(--brand-800);
+    border-radius: 10rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
 .nav-button {
@@ -82,4 +115,14 @@
 .project-details-container {
     width: 100%;
     height: 100%;
+    padding: 0 2rem;
+}
+
+@media (max-width: 540px) {
+    .project-topics-active {
+        display: none;
+    }
+    .project-title-container {
+        text-align: center;
+    }
 }

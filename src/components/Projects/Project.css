@@ -1,4 +1,5 @@
 .project {
+    height: auto;
     border-radius: 12px;
     padding: 1.5rem;
     background-color: var(--neutral-800);
@@ -9,40 +10,69 @@
     color: var(--brand-100);
     margin-bottom: 0.5rem;
   }
+
+  .project__topics {
+    font-size: var(--h6);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  .topic-item {
+    padding: 0.5rem;
+    background-color: var(--brand-800);
+    border-radius: 0.5rem;
+  }
+
+  .project__technologies {
+    font-size: var(--h6);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    color: var(--brand-200);
+  }
+
+  .tech-item {
+    padding: 0.5rem;
+    background-color: var(--brand-700);
+    border-radius: 0.5rem;
+  }
   
   .project__description,
-  .project__contribution,
-  .project__insights {
+  .project__contribution {
     color: var(--neutral-200);
-    margin-bottom: 1rem;
+    padding: 0.5rem 0;
   }
   
-  .project__highlights {
-    list-style: disc;
+  .project__highlights,
+  .project__insights {
     padding-left: 1.5rem;
     color: var(--neutral-100);
-    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    border-left: 1px solid var(--neutral-100);
   }
   
-  .project__highlight-item {
-    margin-bottom: 0.5rem;
-  }
-  
-  .project__technologies {
-    font-size: 0.9rem;
-    color: var(--brand-300);
-    margin-bottom: 1rem;
+  .project__highlight-item,
+  .project__insights {
+    padding: 0.5rem 0rem 0.5rem 1rem;
   }
   
   .project__buttons {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    box-shadow: 1rem;
   }
   
   .project__button {
     background-color: var(--brand-600);
-    color: white;
+    color: var(--neutral-100);
     padding: 0.5rem 1rem;
     border-radius: 8px;
     text-decoration: none;
@@ -50,6 +80,6 @@
   }
   
   .project__button:hover {
-    background-color: var(--brand-400);
+    background-color: var(--brand-500);
   }
   

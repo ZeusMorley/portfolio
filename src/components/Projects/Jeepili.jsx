@@ -2,17 +2,32 @@ import ProjectTemplate from './Template';
 
 export const JEEPILI_TITLE = "Jeepili";
 export const JEEPILI_TOPICS = ['Mobile', 'Android'];
+export const JEEPILI_TECHNOLOGIES = ['React Native', 'Typescript', 'Firebase'];
+
+const JEEPILI_DESCRIPTION = "A mobile app that helps users in Iligan City plan their jeepney commutes with AR-assisted navigation for pickup and drop-off points."
+
+const JEEPILI_HIGHLIGHTS = [
+  "Recommends jeepney routes based on user input",
+  "Displays walking paths for transfers",
+  "Uses AR to project real-world jeepney stops",
+  "Works entirely on Android via Expo"
+]
+
+const JEEPILI_CONTRIBUTION = "I developed the full app logic, integrated map features, and handled AR rendering. Firebase was used for user data and routes."
+
+const JEEPILI_INSIGHTS = "Integrating AR markers using Viro and ARCore was new to me. I learned how to project virtual elements into real-world coordinates and deal with sensor calibration issues. "
+
 
 export default function Jeepili() {
   return (
     <ProjectTemplate
     title={JEEPILI_TITLE}
-    topic = {JEEPILI_TOPICS}
-    technologies = {['React']}
-    description= "Description"
-    highlights = {['Highlight 1', 'Highlight 2', 'Highlight 3']}
-    contribution= "Contribution"
-    insights= "Insights"
+    topics = {JEEPILI_TOPICS}
+    technologies = {JEEPILI_TECHNOLOGIES}
+    description= {JEEPILI_DESCRIPTION}
+    highlights = {JEEPILI_HIGHLIGHTS}
+    contribution= {JEEPILI_CONTRIBUTION}
+    insights= {JEEPILI_INSIGHTS}
     repoLink= "https://github.com"
     demoLink= "https://github.com"
     paperLink= "https://github.com"

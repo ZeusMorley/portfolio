@@ -1,0 +1,52 @@
+.skills-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--neutral-100);
+}
+
+.skills-title {
+    display: flex;
+    font-size: var(--h1);
+    color: var(--brand-500);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.technologies-title,
+.tools-title {
+    display: flex;
+    font-size: var(--h3);
+    color: var(--brand-600);
+    justify-content: center;
+    align-items: center;
+}
+
+.technologies-container,
+.tools-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tech,
+.tool {
+    font-size: var(--h6);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand-800);
+    gap: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.4rem;
+}
+
