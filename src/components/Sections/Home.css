@@ -4,8 +4,8 @@
     gap: 2rem;
 }
 
-.left-side, 
-.right-side {
+.home-container .left-side, 
+.home-container .right-side {
     width: 100%;
     display: flex;
     flex-direction: column;

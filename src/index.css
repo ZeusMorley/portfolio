@@ -22,6 +22,27 @@
   --neutral-800: #071717;
   --neutral-900: #031111;
 
+  --brand-100-rgba: 212, 244, 246;
+  --brand-200-rgba: 182, 242, 245;
+  --brand-300-rgba: 135, 237, 242;
+  --brand-400-rgba: 98, 232, 239;
+  --brand-500-rgba: 42, 190, 198;
+  --brand-600-rgba: 11, 149, 157;
+  --brand-700-rgba: 4, 113, 118;
+  --brand-800-rgba: 2, 66, 69;
+  --brand-900-rgba: 1, 38, 40;
+
+  --neutral-100-rgba: 218, 225, 225;
+  --neutral-200-rgba: 179, 187, 187;
+  --neutral-300-rgba: 128, 139, 141;
+  --neutral-400-rgba: 92, 100, 100;
+  --neutral-500-rgba: 48, 64, 65;
+  --neutral-600-rgba: 26, 44, 45;
+  --neutral-700-rgba: 16, 35, 37;
+  --neutral-800-rgba: 7, 23, 23;
+  --neutral-900-rgba: 3, 17, 17;
+
+  --s8: 0.5rem;
   --s12: 0.75rem;
   --s16: 1rem;
   --s20: 1.25rem;
@@ -37,6 +58,7 @@
   --h4: var(--s20);
   --h5: var(--s16);
   --h6: var(--s12);
+  --h7: var(--s8);
 } 
 
 @media (min-width: 768px) {
@@ -47,6 +69,7 @@
   --h4: var(--s24);
   --h5: var(--s20);
   --h6: var(--s16);
+  --h7: var(--s12);
   }
 }
 
@@ -58,6 +81,7 @@
   --h4: var(--s28);
   --h5: var(--s24);
   --h6: var(--s20);
+  --h7: var(--s16);
   }
 }
 

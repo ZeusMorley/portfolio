@@ -1,0 +1,10 @@
+{
+    "blockman.n23AnalyzeSquareBrackets": false,
+    "blockman.n24AnalyzeRoundBrackets": false,
+    "blockman.n26AnalyzeIndentDedentTokens": true,
+    "blockman.n02EachCharFrameWidth": 2,
+    "blockman.n03MaxDepth": 5,
+    "blockman.n04Sub04RightSideBaseOfBlocks": "Rightmost Edge Of File Content",
+    "blockman.n04Sub05MinDistanceBetweenRightSideEdges": 0,
+    "blockman.n04Sub06AdditionalPaddingRight": 0
+}

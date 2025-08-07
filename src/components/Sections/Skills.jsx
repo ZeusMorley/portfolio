@@ -19,8 +19,8 @@ const Skills = () => {
                     
                     return (
                         <div key={index} className="tech">
-                            {item.name}
                             {Icon && <Icon/>}
+                            {item.name}
                         </div>
                     );
                 })}
@@ -36,8 +36,8 @@ const Skills = () => {
                     
                     return (
                         <div key={index} className="tool">
-                            {item.name}
                             {Icon && <Icon/>}
+                            {item.name}
                         </div>
                     );
                 })}
