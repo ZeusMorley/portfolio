@@ -134,7 +134,7 @@ const Contact = () => {
                         </a>
 
                         <a className="social-icon-profile" 
-                            href="https://www.linkedin.com/in/zeus-morley-pineda-801007194"
+                            href="https://www.linkedin.com/in/zeus-morley-pineda"
                             target="_blank"
                             rel="noopener noreferrer">
                             <FaLinkedin />
