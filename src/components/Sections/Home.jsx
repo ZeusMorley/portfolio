@@ -13,8 +13,24 @@ const Home = () => {
                 </div>
 
                 <div className="action-buttons">
-                    <div className="button">Contact Me</div>
-                    <div className="button">View Projects</div>
+                    <div className="button" onClick={() => {
+                        const target = document.getElementById('contact');
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth'});
+                        }
+                    }}>
+                        Contact Me
+                    </div>
+
+                    <div className="button" onClick={() => {
+                        const target = document.getElementById('experience');
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth'});
+                        }
+                    }}>
+                        View Projects
+                    </div>
+                    
                     <div className="button">Resume</div>
                 </div>
 
