@@ -31,7 +31,11 @@ const Home = () => {
                         View Projects
                     </div>
                     
-                    <div className="button">Resume</div>
+                    <div className="button" onClick={() => {
+                        window.open('/resume.pdf', '_blank');
+                    }}>
+                        Resume
+                    </div>
                 </div>
 
                 <div className="socials">

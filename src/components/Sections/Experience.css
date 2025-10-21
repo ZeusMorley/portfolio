@@ -35,7 +35,7 @@
 }
 
 .experience-contents .right-side {
-    height: 70vh;
+    height: auto;
     overflow-y: auto;
     overflow-x: hidden;
 }

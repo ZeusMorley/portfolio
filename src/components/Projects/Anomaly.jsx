@@ -27,7 +27,7 @@ export default function Anomaly() {
     insights= {ANOMALY_INSIGHTS}
     repoLink= "https://github.com/ZeusMorley/Used-Car-Price-Anomaly-Detection"
     demoLink= ""
-    paperLink= "/CSC172(Pineda) - K-Means Distance-Based Anomaly Detection Compared to Isolation Forest on Philippine Used-Car Listings.pdf"
+    paperLink= "/anomaly_file.pdf"
     />
   );
 }

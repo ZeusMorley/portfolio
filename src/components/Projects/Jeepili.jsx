@@ -31,7 +31,7 @@ export default function Jeepili() {
     insights= {JEEPILI_INSIGHTS}
     repoLink= ''
     demoLink= ''
-    paperLink= '/Thesis__Jeepili__Adjust_Format_.pdf'
+    paperLink= '/thesis_file.pdf'
     />
   );
 }

@@ -9,6 +9,7 @@
     font-size: var(--h3);
     color: var(--brand-100);
     margin-bottom: 0.5rem;
+    margin-top: 0;
   }
 
   .project__topics {
