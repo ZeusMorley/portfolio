@@ -25,9 +25,9 @@ export default function CNN() {
     highlights = {CNN_HIGHLIGHTS}
     contribution= {CNN_CONTRIBUTION}
     insights= {CNN_INSIGHTS}
-    repoLink= "https://github.com"
-    demoLink= "https://github.com"
-    paperLink= "https://github.com"
+    repoLink= "https://github.com/ZeusMorley/5-Candle-Chart-Trend-CNN"
+    demoLink= ""
+    paperLink= ""
     />
   );
 }

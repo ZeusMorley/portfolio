@@ -95,7 +95,7 @@
 @media (max-width: 768px) {
     .greeting,
     .action-buttons {
-        margin-right: 8rem;
+        margin-right: 0rem;
     }
 }
 

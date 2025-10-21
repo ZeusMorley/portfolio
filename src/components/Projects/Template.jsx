@@ -62,21 +62,27 @@ export default function ProjectTemplate({
       
 
       <div className="project__buttons">
-        {repoLink && (
-          <a href={repoLink} className="project__button" target="_blank" rel="noopener noreferrer">
+          <button 
+            className="project__button" 
+            onClick={() => window.open(repoLink, '_blank')} 
+            disabled={repoLink === '' || repoLink === null}
+          >
             Repository
-          </a>
-        )}
-        {demoLink && (
-          <a href={demoLink} className="project__button" target="_blank" rel="noopener noreferrer">
+          </button>
+          <button 
+            className="project__button" 
+            onClick={() => window.open(demoLink, '_blank')} 
+            disabled={demoLink === '' || demoLink === null}
+          >
             Live Demo
-          </a>
-        )}
-        {paperLink && (
-          <a href={paperLink} className="project__button" target="_blank" rel="noopener noreferrer">
+          </button>
+          <button 
+            className="project__button" 
+            onClick={() => window.open(paperLink, '_blank')} 
+            disabled={paperLink === '' || paperLink === null}
+          >
             Read Paper
-          </a>
-        )}
+          </button>
       </div>
     </div>
   );
