@@ -32,7 +32,7 @@ const Home = () => {
                     </div>
                     
                     <div className="button" onClick={() => {
-                        window.open('/resume.pdf', '_blank');
+                        window.open('/resume_pineda.pdf', '_blank');
                     }}>
                         Resume
                     </div>
